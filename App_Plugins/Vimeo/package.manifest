@@ -1,0 +1,18 @@
+﻿{
+  "propertyEditors": [
+    {
+      "id": "90a90413-7fd3-4415-98a1-2c063d915fb7",
+      "alias": "%SolutionName%.Vimeo",
+      "name": "Vimeo",
+      "valueType": "JSON",
+      "editor": {
+        "view": "~/App_Plugins/Vimeo/vimeo-picker.html",
+        "valueType": "JSON"
+      }
+    }
+  ],
+  "javascript": [
+    "/App_Plugins/Vimeo/VimeoController.js",
+    "/App_Plugins/Vimeo/vimeodirective.js"
+  ]
+}

@@ -252,3 +252,8 @@ paket-files/
 *.sln.iml
 
 **/.vs/*
+**/scripts/**/*.js
+**/scripts/**/*.map
+**/App_Plugins/Vimeo/**/*.js
+**/App_Plugins/Vimeo/**/*.map
+**/App_Plugins/Vimeo/**/*.css

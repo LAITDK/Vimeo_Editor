@@ -1,0 +1,35 @@
+﻿@using System.Web.Mvc
+@using System.Web.WebPages.Razor
+@using System.Web.Mvc.Html
+
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<dynamic>
+@{
+    var id = Guid.NewGuid();
+    Newtonsoft.Json.Linq.JValue v = Model.value.Image;
+}
+
+@if (!string.IsNullOrWhiteSpace(v.ToString())) { 
+
+<div type="button" class="grid-vimeo" data-toggle="modal" data-target="#vimeo_@id">
+    <img src="@Html.Action("GetImageUrl", "VideoSurface", new { mediaId = Model.value.Image })" />
+    <div class="grid-vimeo-icon">
+            <img src="/Content/Images/Icons/play_icon_white.png" />
+    </div>
+</div>
+}
+
+
+
+<!-- Modal -->
+<div class="modal fade vimeo-modal" id="vimeo_@id" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-modal-vimeo="@Model.value.Image">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="close-modal">
+                <img src="/Content/Images/Icons/cancel-modal.png" data-dismiss="modal" aria-label="Close" />
+            </div>
+            <div class="modal-body">
+                <div data-vimeo-url="@Model.value.Iframe"></div>
+            </div>
+        </div>
+    </div>
+</div>

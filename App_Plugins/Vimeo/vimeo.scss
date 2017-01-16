@@ -1,0 +1,86 @@
+﻿@import 'Mixins.scss';
+
+
+.box-wrapper {
+    width: 100%;
+    /*min-height: 100px;*/
+    overflow: hidden;
+
+    h4, h3, h2, p {
+        display: block;
+        width: 200px;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    input[type="text"] {
+        border: none;
+        font-size: 14px;
+        margin: 0;
+        outline: 0;
+        padding: 20px;
+        width: 90%;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-shadow: 0 0 1px black;
+        box-shadow: 0 0 1px black;
+        margin: 5px auto;
+        display: block;
+    }
+
+    .vimeo-image-thumbnail {
+        width: 40%;
+        float: left;
+    }
+
+    .vimeo-image-select {
+        width: 60%;
+        float: left;
+    }
+}
+
+.vimeo-image {
+    img {
+        width: 50%;
+        margin: 0px auto;
+        display: block;
+    }
+
+    .grid-vimeo {
+        position: relative;
+
+        .grid-vimeo-icon {
+            @include center;
+            width: 90px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.vimeo-bottom {
+    width: 100%;
+
+    .vimeo-warning {
+        background-color: darkorange;
+        padding: 5px 20px;
+        margin: 10px auto;
+        display: block;
+        width: 150px;
+        text-align: center;
+        border-radius: 5px;
+        color: white;
+    }
+}
+
+.vimeo-start-bottom {
+    ul li{
+        border:none;
+    }
+    
+    margin:0 auto;
+    width:150px;
+}
