@@ -12,6 +12,7 @@ in the view, jquery creates the vimeo player from the link,
 and when pressing the thumbnail, a modal window appear, with 
 a Vimeo video player. 
 
+The video will autoplay, when opening the modal window.
 The video will pause, when closing the modal window. 
 
 
@@ -25,7 +26,7 @@ notes::: (Dansk)
  - Tilføj flg. links til master page: (tilpas hvis nødvendigt)
 
 			<script src="https://player.vimeo.com/api/player.js"></script>
-            <script src="~/scripts/typings/Custom/Modals/VimeoPause.js"></script>
+            <script src="~/scripts/typings/Custom/Modals/VimeoPlayer.js"></script>
 
  note::: (English)
  - Transfer files, to corresponding folders.
@@ -34,4 +35,4 @@ notes::: (Dansk)
  - Add the following links to the master page: ( adapt if needed)
 
  			<script src="https://player.vimeo.com/api/player.js"></script>
-            <script src="~/scripts/typings/Custom/Modals/VimeoPause.js"></script>
+            <script src="~/scripts/typings/Custom/Modals/VimeoPlayer.js"></script>
