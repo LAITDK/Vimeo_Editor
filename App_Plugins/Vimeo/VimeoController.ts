@@ -2,7 +2,7 @@
     assetsService.loadCss("/App_Plugins/Vimeo/vimeo.min.css", $scope, null, 1000);
     
     if ($scope.control.value == null) {
-        $scope.control.value = { EmbeddedCode: null, Image: null };
+        $scope.control.value = { VimeoUrl: null, Image: null };
     }
 
     $scope.setImageUrl = () => {
@@ -26,7 +26,7 @@
 
                 if (!$scope.control.value) 
                 {
-                    $scope.control.value = { Image: "", EmbeddedCode: "" };
+                    $scope.control.value = { Image: "", VimeoUrl: "" };
                 }
                 $scope.setImageUrl();
 

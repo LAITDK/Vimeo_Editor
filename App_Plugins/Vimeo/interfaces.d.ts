@@ -26,12 +26,12 @@
     // "Control" interfaces - data to be saved
     export interface IVimeoControlModel {
         value: IVimeoControlValue;
-        ImageUrl: string
+        ImageUrl: string;
     }
 
     export interface IVimeoControlValue {
         Image: string;
-        EmbeddedCode: string;
+        VimeoUrl: string;
     }
 
 }
