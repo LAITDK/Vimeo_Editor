@@ -7,7 +7,7 @@
     </umb-overlay>
 
     <div class="box-wrapper">
-        <div ng-if="!control.value.Iframe || !control.ImageUrl">
+        <div ng-if="!control.value.VimeoUrl || !control.ImageUrl">
             <div class="box-wrapper">
                 <h2>Vimeo Picker</h2>
             </div>
@@ -23,7 +23,7 @@
         </div>
 
         <!--show result, and edit button.-->
-        <div ng-if="control.value.Iframe && control.ImageUrl">
+        <div ng-if="control.value.VimeoUrl && control.ImageUrl">
             <div class="vimeo-image">
                 <h2>Vimeo Picker</h2>
                 <h2><small>(Thumbnail)</small></h2>

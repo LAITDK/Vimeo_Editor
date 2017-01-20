@@ -8,7 +8,9 @@
     Newtonsoft.Json.Linq.JValue v = Model.value.Image;
 }
 
-@if (!string.IsNullOrWhiteSpace(v.ToString())) { 
+
+
+@if (!string.IsNullOrWhiteSpace(v.ToString()) && Model.value.VimeoUrl != null && Model.value.Image != null) { 
 
 <div type="button" class="grid-vimeo" data-toggle="modal" data-target="#vimeo_@id">
     <img src="@Html.Action("GetImageUrl", "VideoSurface", new { mediaId = Model.value.Image })" />
@@ -16,8 +18,6 @@
             <img src="/Content/Images/Icons/play_icon_white.png" />
     </div>
 </div>
-}
-
 
 
 <!-- Modal -->
@@ -28,8 +28,10 @@
                 <img src="/Content/Images/Icons/cancel-modal.png" data-dismiss="modal" aria-label="Close" />
             </div>
             <div class="modal-body">
-                <div data-vimeo-url="@Model.value.Iframe"></div>
+                <div data-vimeo-url="@Model.value.VimeoUrl"></div>
             </div>
         </div>
     </div>
 </div>
+
+}

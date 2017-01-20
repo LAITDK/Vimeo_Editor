@@ -22,7 +22,8 @@
             submit: function (model) {
                 //console.log(model);
                 // do submit magic here
-                
+
+
                 if (!$scope.control.value) 
                 {
                     $scope.control.value = { Image: "", EmbeddedCode: "" };
@@ -38,7 +39,6 @@
                 $scope.overlay = null;
             },
             close: function (oldModel) {
-                //console.log(oldModel);
                 // do close magic here
 
                 $scope.overlay.show = false;
@@ -56,7 +56,6 @@
         function populatePicture(item) {
             updateModel(item.id);
         }
-        console.log($scope);
         function updateModel(id) {
 
             var existingValue = $scope.control.value;
@@ -65,11 +64,4 @@
             $scope.setImageUrl();
         };
     }
-    
-});
-
-angular.module("umbraco").controller("VimeoOverlayController", function ($scope: Vimeo.IVimeoScope, assetsService: umbraco.services.IAssetsService, entityResource) {
-    console.log($scope);
-
-
 });

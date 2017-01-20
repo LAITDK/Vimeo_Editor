@@ -22,22 +22,16 @@ notes::: (Dansk)
  - Overfør filer, til de tilsvarende mapper. 
  - App_Plugins -> Vimeo -> "package.manifest", tilpas Alias til projekt navn.(%SolutionName%)
  - Controller -> "VideoSurfaceController.cs", tilpas namespace samt using. (%SolutionName%) 
- - Scripts -> typings -> Custom -> Modals -> "VimeoModal.ts", tilpas funtion data-modal-vimeo, til at new dit projekt navn. (%SolutionName%)
  - Tilføj flg. links til master page: (tilpas hvis nødvendigt)
+
 			<script src="https://player.vimeo.com/api/player.js"></script>
             <script src="~/scripts/typings/Custom/Modals/VimeoPause.js"></script>
-            <script src="~/scripts/typings/Custom/Modals/VimeoModal.js"></script>
-            <script src="~/scripts/typings/Custom/Modals/VimeoCreateEmbed.js"></script>
-            <script src="~/scripts/typings/Custom/carousel.js"></script>
 
  note::: (English)
  - Transfer files, to corresponding folders.
  - App_Plugins -> Vimeo -> "package.manifest", adapt Alias to your project name (%SolutionName%)
  - Controller -> "VideoSurfaceController.cs", adapt namespace and using. (%SolutionName%)
- - Scripts -> typings -> Custom -> Modals -> "Vimeomodal.ts", adapt funtion data-modal-vimeo, to "new" your project name. (%SolutionName%)
  - Add the following links to the master page: ( adapt if needed)
+
  			<script src="https://player.vimeo.com/api/player.js"></script>
             <script src="~/scripts/typings/Custom/Modals/VimeoPause.js"></script>
-            <script src="~/scripts/typings/Custom/Modals/VimeoModal.js"></script>
-            <script src="~/scripts/typings/Custom/Modals/VimeoCreateEmbed.js"></script>
-            <script src="~/scripts/typings/Custom/carousel.js"></script>

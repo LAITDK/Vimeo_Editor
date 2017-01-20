@@ -2,7 +2,7 @@
   "propertyEditors": [
     {
       "id": "90a90413-7fd3-4415-98a1-2c063d915fb7",
-      "alias": "%SolutionName%.Vimeo",
+      "alias": "umbraco_test_site.Vimeo",
       "name": "Vimeo",
       "valueType": "JSON",
       "editor": {

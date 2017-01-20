@@ -7,10 +7,7 @@ angular.module("umbraco.directives")
             replace: true,
             templateUrl: '/App_Plugins/Vimeo/vimeo-picker.html',
             require: "ngModel",
-            link: ($scope, element, attr, ctrl: umbraco.IUmbracoController) => {
-                
-
-            }
+            link: ($scope, element, attr, ctrl: umbraco.IUmbracoController) => {}
         };
     });
 
